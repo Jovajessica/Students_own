@@ -1,0 +1,21 @@
+*
+body {
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(231, 214, 37);
+    background-color: rgb(93, 54, 117);
+    padding-left: 10px;
+}
+input {
+    display: block;
+    margin: 40px;
+    padding: 20px;
+    width: 190px;
+    background-color:  rgb(230, 118, 163);
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px rgba(205, 121, 236, 0.869); 
+}
+fieldset{
+    border: 2px solid rgb(243, 140, 140);
+    box-shadow: 0 3px 150px rgba(205, 121, 236, 0.869); 
+}

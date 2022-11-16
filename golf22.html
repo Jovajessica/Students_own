@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Popups</title>
+    <link rel="stylesheet" href="golf.css">
+</head>
+
+<body class="golf-background">
+    <h1 class="h1">Results</h1>
+    <img src="#" id="img">
+    <input type="button" value="Play Again" id="btn" onclick="window.location.reload(true)">
+
+
+
+    <script>
+        
+        document.body.style.backgroundImage = "url('golf-bkg.jpeg')";
+        var par1 = window.prompt("Which Par Course?:");
+        var par = parseInt(par1);
+
+        var strokes1 = window.prompt("How many strokes were played?:");
+        var strokes = parseInt(strokes1);
+
+
+        switch (true) {
+            case strokes <=0:
+           output = document.getElementById("img").src = "Correct.png";
+                break;
+            case par <=0:
+            output = document.getElementById("img").src = "wrong1.png"; 
+                break;
+            case strokes ==1:
+            output = document.getElementById("img").src = "wrong2.png"; 
+                break;
+            case strokes <= par - 2:
+            output = document.getElementById("img").src = "wrong3.png";
+                break;
+
+            default:
+            document.getElementById("img").src = "over.png";
+            break;
+          }
+        
+        
+    </script>
+
+</body>
+
+</html>
